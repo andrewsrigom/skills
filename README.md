@@ -9,7 +9,7 @@ This repo publishes reusable, installable skills grouped by pack.
 The goal is not to mirror vendor docs. The goal is to keep agents on a sane implementation path with explicit defaults, guardrails, anti-patterns, and verification steps.
 
 <!-- catalog-summary:start -->
-Current catalog: 62 skills across library packs and workflow packs.
+Current catalog: 63 skills across library packs and workflow packs.
 <!-- catalog-summary:end -->
 
 ## Install
@@ -76,7 +76,7 @@ Full catalog site: `https://andrewsrigom.github.io/agent-skills/`
 ## Workflow Packs
 
 <!-- workflow-packs:start -->
-- `engineering` (8 skills)
+- `engineering` (9 skills)
 - `skilling` (1 skill)
 <!-- workflow-packs:end -->
 

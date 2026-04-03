@@ -1,6 +1,6 @@
 ---
 title: "engineering"
-description: "8 skills in the engineering pack."
+description: "9 skills in the engineering pack."
 sidebar:
   label: "Overview"
   order: 0
@@ -16,4 +16,5 @@ sidebar:
 - [Setup Pre-Commit](/packs/engineering/setup-pre-commit/) — Use when setting up pre-commit automation in a JavaScript or TypeScript repo. Covers Husky, lint-staged, formatter setup, package-manager-aware hook commands, and keeping commit-time checks realistic.
 - [TDD](/packs/engineering/tdd/) — Use when building a feature or fixing a bug with test-driven development. Covers red-green-refactor, vertical slices, public-interface tests, and sequencing implementation around one behavior at a time.
 - [Triage Issue](/packs/engineering/triage-issue/) — Use when investigating a bug before fixing it. Covers fast diagnosis, root-cause tracing, narrowing repro paths, checking adjacent code and tests, and producing a concrete fix plan instead of guessing.
+- [Write Decision Complete Feature Spec](/packs/engineering/write-decision-complete-feature-spec/) — Use when a feature needs a real implementation spec before coding starts. Covers goal and success criteria, user-facing behavior, boundaries, non-goals, edge cases, acceptance checks, and the rule that the spec should remove implementation guesswork instead of just sounding thorough.
 - [Write Intentional Commit Message](/packs/engineering/write-intentional-commit-message/) — Use when writing or reviewing a commit message and the real challenge is choosing the correct Conventional Commit type, scope, and summary based on change intent. Covers commit splitting, amend vs new commit decisions, and avoiding vague or misleading commit titles.
