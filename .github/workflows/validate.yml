@@ -1,0 +1,44 @@
+name: Validate
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install Python dependencies
+        run: python3 -m pip install --upgrade pip pyyaml
+
+      - name: Install site dependencies
+        working-directory: site
+        run: npm ci
+
+      - name: Validate repo structure
+        run: python3 scripts/validate_skills_repo.py
+
+      - name: Validate skills.sh discovery
+        run: npx skills add . --list
+
+      - name: Build public catalog
+        working-directory: site
+        run: npm run build
